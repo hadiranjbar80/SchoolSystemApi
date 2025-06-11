@@ -46,18 +46,3 @@ namespace API.Controllers
         }
     }
 }
-
-/*
-{
-    "id": "1111111111",
-    "schoolCode": "145",
-    "firstName": "هادی",
-    "lastName": "رنجبر",
-    "fatherName": "",
-    "parentPhoneNumber": "09334453929",
-    "address": "مرودشت",
-    "postalCode": "1234567890",
-    "commuteService": 0
-}
-
-*/
