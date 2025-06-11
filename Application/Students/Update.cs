@@ -14,6 +14,15 @@ namespace Application.Students
             public Student Student { get; set; }
         }
 
+
+public class CommandValidator : AbstractValidator<Command>
+        {
+            public CommandValidator()
+            {
+                RuleFor(x => x.Student).SetValidator(new StudentValidator());
+            }
+        }
+
         public class Handler : IRequestHandler<Command, Result<Unit>>
         {
             private readonly DataContext _context;
